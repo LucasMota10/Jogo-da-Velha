@@ -1,12 +1,13 @@
 #include <stdio.h>
 #include <string.h>
 void imprima_matriz(char velha[3][3]){
-printf(" 0 | 1 | 2 \n");
-printf("0 %c | %c | %c\n", velha[0][0], velha[0][1], velha[0][2]);
-printf(" ----------\n");
-printf("1 %c | %c | %c\n", velha[1][0], velha[1][1], velha[1][2]);
-printf(" ----------\n");
-printf("2 %c | %c | %c\n", velha[2][0], velha[2][1], velha[2][2]);
+printf(" | 0 | 1 | 2 |\n");
+printf(" |-----------|\n");
+printf("0| %c | %c | %c |\n", velha[0][0], velha[0][1], velha[0][2]);
+printf(" |---|---|---|\n");
+printf("1| %c | %c | %c |\n", velha[1][0], velha[1][1], velha[1][2]);
+printf(" |---|---|---|\n");
+printf("2| %c | %c | %c |\n", velha[2][0], velha[2][1], velha[2][2]);
 }
 int main(){
 char jogador1[20];
@@ -17,8 +18,7 @@ scanf(" %s",jogador1);
 printf("Insira o Nome do Jogador2:\n");
 scanf(" %s",jogador2);
 printf("*******************************\n");
-printf("Nome do Jogador 1: %s\nNome do Jogador 2: %s\nBoa sorte jogadores %s e %s\
-n*******************************\n",jogador1,jogador2,jogador1,jogador2);
+printf("Nome do Jogador 1: %s\nNome do Jogador 2: %s\nBoa sorte jogadores %s e %s\n*******************************\n",jogador1,jogador2,jogador1,jogador2);
 printf(" 0 1 2\n");
 printf("0 | | \n");
 printf("1 | | \n");
